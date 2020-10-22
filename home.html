@@ -16,19 +16,17 @@
     <!-- nav bar -->
     <nav id="navbar" class="navbar navbar-expand navbar-dark fixed-top pt-lg-3 pb-lg-3">
       <div class="container-fluid">
-	<a class="navbar-brand font-weight-bold" style="font-family: 'El Messiri'; color: var(--txt-color-primary);" href="#"><h2>SimpleWash</h2></a>
+	<a class="navbar-brand" style="color: var(--txt-color-primary);" href="#"><h2>SimpleWash</h2></a>
 	<div class="collapse navbar-collapse">
 	  <ul class="nav navbar-nav">
-	    <li class="nav-item font-weight-bold d-none d-md-block"><a href="#section-two" style="color: var(--txt-color-primary);" class="nav-link">Services</a></li>
-	    <li class="nav-item font-weight-bold d-none d-lg-block"><a href="#section-three" style="color: var(--txt-color-primary);" class="nav-link">Why Us</a></li>
-	    <li class="nav-item font-weight-bold"><a href="#" style="color: var(--txt-color-primary);" class="nav-link">Pricing</a></li>
-	    <li class="nav-item font-weight-bold d-none d-lg-block"><a href="#" style="color: var(--txt-color-primary);" class="nav-link">Schedule</a></li>
-	    <li class="nav-item font-weight-bold d-none d-md-block"><a href="#section-five" style="color: var(--txt-color-primary);" class="nav-link">Special Requests</a></li>
-	    <li class="nav-item font-weight-bold d-none d-md-block"><a href="#section-six" style="color: var(--txt-color-primary);" class="nav-link">Get $10!</a></li>
-	    <li class="nav-item font-weight-bold d-none d-md-block"><a href="#section-eight" style="color: var(--txt-color-primary);" class="nav-link">FAQ</a></li>
-	    <li class="nav-item font-weight-bold"><a href="#section-seven" style="color: var(--txt-color-primary);" class="nav-link">Contact Us</a></li>
-	    
-	    <!-- <li class="nav-item font-weight-bold"><a href="#section-four" style="color: var(--bg-color-four);" class="nav-link">Conclusion</a></li> -->
+	    <li class="nav-item d-none d-md-block"><a href="#services" style="color: var(--txt-color-primary);" class="nav-link">Services</a></li>
+	    <li class="nav-item d-none d-lg-block"><a href="#why-us" style="color: var(--txt-color-primary);" class="nav-link">Why Us</a></li>
+	    <li class="nav-item"><a style="color: var(--txt-color-primary);" class="nav-link">Pricing</a></li>
+	    <li class="nav-item d-none d-lg-block"><a href="#intro" style="color: var(--txt-color-primary);" class="nav-link">Schedule</a></li>
+	    <li class="nav-item d-none d-md-block"><a href="#special-requests" style="color: var(--txt-color-primary);" class="nav-link">Special Requests</a></li>
+	    <li class="nav-item d-none d-md-block"><a href="#share-get" style="color: var(--txt-color-primary);" class="nav-link">Get $10!</a></li>
+	    <li class="nav-item d-none d-md-block"><a style="color: var(--txt-color-primary);" class="nav-link">FAQ</a></li>
+	    <li class="nav-item"><a href="#contact-us" style="color: var(--txt-color-primary);" class="nav-link">Contact Us</a></li>
 	  </ul>
 	</div>	
       </div>
@@ -37,7 +35,7 @@
     <!-- Main function should be presented in this seciton -->
     <div id="intro">
     <div class="container d-flex flex-column justify-content-center" style="height: 45rem;">
-      <h1>Laundry Made Simple.</h1>
+      <h1 style="font-size: 48px; font-weight: 500;">Laundry Made Simple.</h1>
       <div>
         <h3>More detailed explanation of your service here.</h3>
         <h3>Or a smart sentence, your choice.</h3>
@@ -54,11 +52,11 @@
     </div>
 
     <!-- A bg-cover image -->
-    <div id="section-one" class="d-flex flex-column text-center justify-content-between align-items-between bg-cover d-none d-md-block">
+    <div id="bg-cover" class="d-flex flex-column text-center justify-content-between align-items-between d-none d-md-block">
     </div>
 
     <!-- Services -->
-    <div id="section-two">
+    <div id="services">
       <div class="container d-flex flex-column justify-content-center align-items-center">
 	<h1>Our Services</h1>
       <div class="d-flex flex-row flex-wrap justify-content-start align-items-center">
@@ -92,7 +90,7 @@
     </div>
 
     <!-- Why Us? -->
-    <div id="section-three">
+    <div id="why-us">
       <div class="container d-flex flex-column justify-content-center align-items-center">
 	<h1>Why Us?</h1>
 	<p>Why use SimpleWash? We want to make things very simple. 
@@ -134,23 +132,43 @@ Give us your old unwanted clothing and we will donate them to a local charity in
       </div>
     </div>    
 
+    <div id="special-requests">
+      <div class="container d-flex flex-column text-center justify-content-between align-items-between">
+	<h1 class="text-center">FOR SPECIAL REQUESTS & ORDERS</h1>
+	<form>
+	  <div class="form-group row">
+	    <div class="form-group col-md-6">
+	      <input type="text" class="form-control" id="sname" placeholder="Name*" required="true">
+	    </div>
+	    <div class="form-group col-md-6">
+	      <input type="email" class="form-control" id="semail" placeholder="Email*" required="true">
+	    </div>
+	  </div>
+	  
+	  <div class="form-group row">
+	    <div class="col-sm-12">
+	      <input type="text" class="form-control" id="subject" placeholder="Subject">
+	    </div>
+	  </div>
 
-    <!-- <div id="section-four" class="d-flex flex-column justify-content-around align-items-around text-center"> -->
-    <!--   <h1>Notes on Observations</h1> -->
-      
-    <!--   <div class="d-flex flex-row justify-content-around align-items-around flex-wrap"> -->
+	  <div class="form-group row">
+	    <div class="col-sm-12">
+	      <textarea type="text" class="form-control" id="message" placeholder="Message"></textarea>
+	    </div>
+	  </div>
+	  <button type="submit" href="" class="btn btn-info btn-block" style="background-color: var(--txt-color-primary)">Submit</button>
+      </form>
+      </div>
+    </div>
 
-    <!--   </div> -->
-    <!-- </div> -->
-    
-    <div id="section-six">
+    <div id="share-give">
       <div class="container d-flex flex-column text-center justify-content-between align-items-between">
 	<h1 class="text-center">Share laundry day. Give & get $10!</h1>
 	<form>
 	  <div class="form-group row">
-	    <label for="email" class="col-sm-2 col-form-label">Your Email</label>
+	    <label for="email" class="col-sm-2 col-form-label">Your Email*</label>
 	    <div class="col-sm-10">
-	      <input type="email" class="form-control" id="email" placeholder="email@example.com">
+	      <input type="email" class="form-control" id="email" placeholder="email@example.com" required="true">
 	    </div>
 	  </div>
 	  <div class="form-group row">
@@ -164,9 +182,9 @@ Give us your old unwanted clothing and we will donate them to a local charity in
 	  </div>
 
 	  <div class="form-group row">
-	    <label for="emailFriend" class="col-sm-2 col-form-label">Friend Email</label>
+	    <label for="emailFriend" class="col-sm-2 col-form-label">Friend Email*</label>
 	    <div class="col-sm-10">
-	      <input type="email" class="form-control" id="emailFriend" placeholder="email@example.com">
+	      <input type="email" class="form-control" id="emailFriend" placeholder="email@example.com" required="true">
 	    </div>
 	  </div>
 	  <div class="form-group row">
@@ -178,10 +196,51 @@ Give us your old unwanted clothing and we will donate them to a local charity in
 	      <input type="text" class="form-control" id="lastNameFriend" placeholder="Last Name">
 	    </div>
 	  </div>
-	  <button type="submit" href="#" class="btn btn-primary" style="background-color: var(--txt-color-primary)">Submit</button>
+	  <button type="submit" href="#" class="btn btn-info btn-block" style="background-color: var(--txt-color-primary)">Submit</button>
 
       </form>
       </div>
     </div>
+
+    <div id="contact-us">
+      <div class="container d-flex flex-column justify-content-center align-items-center">
+	<h1>Contact Us</h1>
+	<div class="d-flex flex-row flex-wrap justify-content-center align-items-start">
+	  <div class="text-center">
+	    <h5>On-Demand Delivery:</h5>
+	    <p>City, State XXXXX</p>
+	    <p>Phone: XXX-XXX-XXXX</p>
+	    <p>Email: xxxx.xxxx@xxx.com</p>
+	  </div>
+	  <div class="text-center">
+	    <h5>Delivery Hours:</h5>
+	    <p>Mon - Fri: 6am - 8am & 6pm - 9pm</p>
+	    <p>Sat & Sun: Closed</p>
+	  </div>
+	  <div class="text-center">
+	    <h5>Have Questions?</h5>
+	    <p><a href="">FAQ</a></p>
+	  </div>
+	</div>
+
+	<h5>Subscribe and stay up to date on great laundry deals: </h5>
+	<form>
+	<div class="input-group">
+	  <input type="text" class="form-control" placeholder="Email" aria-label="Your Email here" aria-describedby="basic-addon2" required="true">
+	  <div class="input-group-append">
+	    <button class="btn btn-outline-secondary" style="color: var(--bg-color); background-color: var(--txt-color-primary);" type="button">Subscribe</button>
+	  </div>
+	</div>
+	</form>
+      </div>
+
+      <div id="fake-map" class="text-center">
+	<img src="./img/simplewash-map.png" style="width: 100%"/>
+	<small>© 2016 SimpleWash*</small>
+      </div>
+    </div>    
+
+    <small class="text-center">*This webpage is made for Brown University CS1300 UI&UX responsive design assignment. If you are looking for the SimpleWash laundry service, please head to <a href="https://www.simplewash.us">simplewash.us</a>.</small>
+    
   </body>
 </html>
