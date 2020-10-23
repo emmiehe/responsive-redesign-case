@@ -77,8 +77,12 @@ h1{
     padding-bottom: var(--padding-header);
 }
 
-h2, h3{
+h2{
     font-family: 'El Messiri';
+}
+
+h3{
+    font-family: 'Open Sans';
 }
 
 h5{
