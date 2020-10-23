@@ -87,18 +87,19 @@ p{
 }
 
 #bg-cover {
-  /* Set rules to fill background */
-  /* min-height: 100%; */
-  /* min-width: 100%; */
+    /* Set rules to fill background */
+    /* min-height: 100%; */
+    /* min-width: 100%; */
 	
-    /* /\* Set up positioning *\/ */
-    padding-top: 20rem;/* var(--padding-top);   */
+    /* Set up positioning */
+    padding-top: 12rem; /* var(--padding-top);   */
     background-color: var(--bg-color-one);
     padding-bottom: var(--padding-bottom);
     
     opacity: 0.8;
-    background: url(./img/simplewash-help-crop.jpg) repeat center center fixed;
-    height: 100%;
-    background-size: cover;
+    background: url(./img/simplewash-help-crop.jpg) no-repeat center center fixed;
+    /* height: 60rem; */
+    width: 100%;
+    background-size: 100%;
     overflow: hidden;
 }
