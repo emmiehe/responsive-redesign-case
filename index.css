@@ -38,7 +38,6 @@
 }
 
 body {
-    /* padding-top: 50px;  */
     font-family: 'Open Sans',
     background-color: var(--bg-color);
     color: var(--txt-color-primary);
@@ -72,7 +71,7 @@ h1{
     padding-bottom: 3rem;
 }
 
-h2{
+h2, h3{
     font-family: 'El Messiri';
 }
 
@@ -88,18 +87,22 @@ p{
 
 #bg-cover {
     /* Set rules to fill background */
-    /* min-height: 100%; */
-    /* min-width: 100%; */
+    /* min-height: 100%;  */
+    /* min-width: 100%;  */
 	
     /* Set up positioning */
-    padding-top: 12rem; /* var(--padding-top);   */
-    background-color: var(--bg-color-one);
-    padding-bottom: var(--padding-bottom);
+    padding-top: 15rem; /* var(--padding-top);   */
+    background-color: var(--bg-color);
+    /* padding-bottom: var(--padding-bottom); */
     
     opacity: 0.8;
-    background: url(./img/simplewash-help-crop.jpg) no-repeat center center fixed;
+    background: url(./img/simplewash-help-crop.jpg) no-repeat center bottom fixed;
     /* height: 60rem; */
-    width: 100%;
+    /* max-height: 100%; */
+    /* max-width: 100%; */
+    background-position: 50% 70%;
     background-size: 100%;
     overflow: hidden;
 }
+
+
