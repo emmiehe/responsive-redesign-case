@@ -32,7 +32,8 @@
     --bg-color: #f6fff8;
     --bg-color-secondary: #fefffe; 
     --bg-color-nav: #cce3de;
-    --txt-color-primary: #2B7A78; /* #6b9080; */
+    --txt-color-primary: #256A66; /* #2B7A78; /\* #6b9080; *\/ */
+    --txt-color-secondary: #000000; /* #000080; */
     --intro-height: 28rem;
     --padding-top: 10rem;
     --padding-bottom: 2rem;
@@ -83,6 +84,10 @@ h2, h3{
 h5{
     max-width: 35rem;
     margin: 1.5rem;
+}
+
+a{
+    color: var(--txt-color-secondary);
 }
 
 p{
