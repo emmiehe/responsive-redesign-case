@@ -33,6 +33,7 @@
     --bg-color-secondary: #fefffe; 
     --bg-color-nav: #cce3de;
     --txt-color-primary: #2B7A78; /* #6b9080; */
+    --intro-height: 28rem;
     --padding-top: 10rem;
     --padding-bottom: 2rem;
     --padding-between: 5rem;
@@ -99,8 +100,9 @@ p{
     overflow: hidden;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1400px) {
     :root {
+	--intro-height: 20rem;
 	--padding-top: 6rem;
 	--padding-bottom: 1rem;
 	--padding-between: 3rem;
