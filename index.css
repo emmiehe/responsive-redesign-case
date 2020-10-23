@@ -37,6 +37,8 @@
     --padding-bottom: 2rem;
     --padding-between: 5rem;
     --padding-header: 3rem;
+    --pic-height: 15rem;
+    --pic-sm-height: 12rem;
 }
 
 body {
@@ -103,8 +105,9 @@ p{
 	--padding-bottom: 1rem;
 	--padding-between: 3rem;
 	--padding-header: 1rem;
+	--pic-height: 10rem;
+	--pic-sm-height: 8rem;
     }
-
 
     #bg-cover {
 	padding-top: 0rem; /* not showing the bg for smaller devices */
@@ -126,4 +129,10 @@ p{
 	margin: 0.5rem;
     }
 
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+	font-size: 12px;
+    }
 }
